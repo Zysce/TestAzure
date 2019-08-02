@@ -1,0 +1,50 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "variables": {},
+    "parameters": {
+        "batchAccountName": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+        "storageAccountName": {
+            "type": "string"
+        },
+        "storageAccountType": {
+            "type": "string"
+        },
+        "kind": {
+            "type": "string"
+        }
+    },
+    "resources": [
+        {
+            "name": "[parameters('batchAccountName')]",
+            "type": "Microsoft.Batch/batchAccounts",
+            "apiVersion": "2019-04-01",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "[concat('Microsoft.Storage/storageAccounts', '/', parameters('storageAccountName'))]"
+            ],
+            "properties": {
+                "poolAllocationMode": "BatchService",
+                "autoStorage": {
+                    "storageAccountId": "/subscriptions/73c12a5d-dd45-4dd6-8765-7a2eb5731a31/resourceGroups/test-rg-al/providers/Microsoft.Storage/storageAccounts/storagetestbatch"
+                }
+            },
+            "tags": {}
+        },
+        {
+            "name": "[parameters('storageAccountName')]",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2017-10-01",
+            "location": "[parameters('location')]",
+            "kind": "[parameters('kind')]",
+            "sku": {
+                "name": "[parameters('storageAccountType')]"
+            }
+        }
+    ]
+}

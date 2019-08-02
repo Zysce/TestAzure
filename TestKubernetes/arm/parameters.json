@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "kubtestal"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "dnsPrefix": {
+            "value": "kubtestal-dns"
+        },
+        "agentCount": {
+            "value": 3
+        },
+        "agentVMSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "servicePrincipalClientId": {
+            "value": null
+        },
+        "servicePrincipalClientSecret": {
+            "value": null
+        },
+        "kubernetesVersion": {
+            "value": "1.13.7"
+        },
+        "networkPlugin": {
+            "value": "azure"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "vnetSubnetID": {
+            "value": "/subscriptions/73c12a5d-dd45-4dd6-8765-7a2eb5731a31/resourceGroups/test-rg-al/providers/Microsoft.Network/virtualNetworks/test-rg-al-vnet/subnets/default"
+        },
+        "serviceCidr": {
+            "value": "10.0.0.0/16"
+        },
+        "dnsServiceIP": {
+            "value": "10.0.0.10"
+        },
+        "dockerBridgeCidr": {
+            "value": "172.17.0.1/16"
+        },
+        "principalId": {
+            "value": "bdb390cf-dde4-463e-b396-cb47ef4b6cff"
+        },
+        "workspaceName": {
+            "value": "DefaultWorkspace-73c12a5d-dd45-4dd6-8765-7a2eb5731a31-EUS"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/73c12a5d-dd45-4dd6-8765-7a2eb5731a31/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-73c12a5d-dd45-4dd6-8765-7a2eb5731a31-EUS"
+        },
+        "workspaceRegion": {
+            "value": "eastus"
+        },
+        "aciVnetSubnetName": {
+            "value": "virtual-node-aci"
+        },
+        "aciConnectorLinuxEnabled": {
+            "value": true
+        }
+    }
+}
