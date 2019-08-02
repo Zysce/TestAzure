@@ -1,0 +1,14 @@
+ https://github.com/Azure-Samples/active-directory-dotnet-native-desktop
+ https://github.com/Azure-Samples/aks-dotnet-manage-kubernetes-cluster.git
+ https://github.com/Azure-Samples/app-service-web-dotnet-get-started.git
+ https://github.com/AzureADQuickStarts/AppModelv2-WebApp-OpenIDConnect-DotNet.git
+ https://github.com/Azure-Samples/azure-batch-samples.git
+ https://github.com/Azure-Samples/azure-voting-app-redis.git
+ https://github.com/Azure-Samples/batch-dotnet-manage-batch-accounts.git
+ https://github.com/Azure-Samples/dotnet-core-api.git
+ https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart.git
+ https://github.com/Azure-Samples/dotnet-sqldb-tutorial.git
+ https://github.com/Azure-Samples/durablefunctions-apiscraping-dotnet.git
+ https://github.com/Azure-Samples/event-hubs-dotnet-user-notifications.git
+ https://github.com/Azure-Samples/storage-blob-dotnet-getting-started.git
+ https://github.com/Azure-Samples/storage-table-dotnet-getting-started.git
