@@ -32,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{62E6
 		giturls.txt = giturls.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestKeyVault", "TestKeyVault\TestKeyVault.csproj", "{07F20DBB-110B-44D7-B2DB-A16659A42F62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{A6E1EC19-6439-4DE7-AF08-22988958AFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6E1EC19-6439-4DE7-AF08-22988958AFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6E1EC19-6439-4DE7-AF08-22988958AFEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F20DBB-110B-44D7-B2DB-A16659A42F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F20DBB-110B-44D7-B2DB-A16659A42F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F20DBB-110B-44D7-B2DB-A16659A42F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F20DBB-110B-44D7-B2DB-A16659A42F62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
