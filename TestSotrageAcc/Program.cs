@@ -28,6 +28,7 @@ namespace TestStorageAcc
         {
             var obj = new TestEntity(name);
             var insOp = TableOperation.Insert(obj);
+            var b = new TableBatchOperation();
             await t.ExecuteAsync(insOp);
         }
 

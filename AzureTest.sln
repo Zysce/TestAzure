@@ -21,18 +21,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCosmosDb", "TestCosmosD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDb", "TestDb\TestDb.csproj", "{8BBBBD60-1338-435C-8FD7-2BEB857151A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBlob", "TestBlob\TestBlob.csproj", "{AE5C2EF6-5E7E-436C-B10C-562F4CF87E4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBlob", "TestBlob\TestBlob.csproj", "{AE5C2EF6-5E7E-436C-B10C-562F4CF87E4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAD", "TestAD\TestAD.csproj", "{98705D81-E839-4752-81D0-757777EDD18C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAD", "TestAD\TestAD.csproj", "{98705D81-E839-4752-81D0-757777EDD18C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSas", "TestSas\TestSas.csproj", "{A6E1EC19-6439-4DE7-AF08-22988958AFEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSas", "TestSas\TestSas.csproj", "{A6E1EC19-6439-4DE7-AF08-22988958AFEE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{62E6D710-5D4A-46A2-91BD-3BF63F526E64}"
 	ProjectSection(SolutionItems) = preProject
 		giturls.txt = giturls.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestKeyVault", "TestKeyVault\TestKeyVault.csproj", "{07F20DBB-110B-44D7-B2DB-A16659A42F62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestKeyVault", "TestKeyVault\TestKeyVault.csproj", "{07F20DBB-110B-44D7-B2DB-A16659A42F62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestRedis", "TestRedis\TestRedis.csproj", "{67A0A139-490D-48C6-86FE-62FEEDE9D3A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSearch", "TestSearch\TestSearch.csproj", "{FC61CBA5-8440-4E1F-A716-132867E450D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +96,14 @@ Global
 		{07F20DBB-110B-44D7-B2DB-A16659A42F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07F20DBB-110B-44D7-B2DB-A16659A42F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07F20DBB-110B-44D7-B2DB-A16659A42F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A0A139-490D-48C6-86FE-62FEEDE9D3A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A0A139-490D-48C6-86FE-62FEEDE9D3A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A0A139-490D-48C6-86FE-62FEEDE9D3A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A0A139-490D-48C6-86FE-62FEEDE9D3A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC61CBA5-8440-4E1F-A716-132867E450D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC61CBA5-8440-4E1F-A716-132867E450D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC61CBA5-8440-4E1F-A716-132867E450D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC61CBA5-8440-4E1F-A716-132867E450D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
