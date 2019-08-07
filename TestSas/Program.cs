@@ -8,6 +8,7 @@ namespace TestSas
     {
         private static string _cn = "";
 
+        //https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1
         static void Main(string[] args)
         {
             var containerName = "testcontainer";
@@ -87,6 +88,26 @@ namespace TestSas
                 SharedAccessExpiryTime = DateTime.UtcNow.AddHours(1),
                 Permissions = permissions
             };
+        }
+
+        static string GetAccountSASToken()
+        {
+            // To create the account SAS, you need to use your shared key credentials. Modify for your account.
+            const string ConnectionString = "DefaultEndpointsProtocol=https;AccountName=account-name;AccountKey=account-key";
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(ConnectionString);
+
+            // Create a new access policy for the account.
+            SharedAccessAccountPolicy policy = new SharedAccessAccountPolicy()
+            {
+                Permissions = SharedAccessAccountPermissions.Read | SharedAccessAccountPermissions.Write | SharedAccessAccountPermissions.List,
+                Services = SharedAccessAccountServices.Blob | SharedAccessAccountServices.File,
+                ResourceTypes = SharedAccessAccountResourceTypes.Service,
+                SharedAccessExpiryTime = DateTime.UtcNow.AddHours(24),
+                Protocols = SharedAccessProtocol.HttpsOnly
+            };
+
+            // Return the SAS token.
+            return storageAccount.GetSharedAccessSignature(policy);
         }
     }
 }
