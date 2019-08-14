@@ -88,6 +88,35 @@ namespace TestAzure
                 // create a simple task. Each task within a job must have a unique ID
                 await batchClient.JobOperations.AddTaskAsync(jobId, new CloudTask("task1", "cmd /c echo Hello world from the Batch Hello world sample!"));
 
+
+                //for (int i = 0; i < inputFiles.Count; i++)
+                //{
+                //    string taskId = String.Format("Task{0}", i);
+
+                //    // Define task command line to convert each input file.
+                //    string appPath = String.Format("%AZ_BATCH_APP_PACKAGE_{0}#{1}%", appPackageId, appPackageVersion);
+                //    string inputMediaFile = inputFiles[i].FilePath;
+                //    string outputMediaFile = String.Format("{0}{1}",
+                //        System.IO.Path.GetFileNameWithoutExtension(inputMediaFile),
+                //        ".mp3");
+                //    string taskCommandLine = String.Format("cmd /c {0}\\ffmpeg-3.4-win64-static\\bin\\ffmpeg.exe -i {1} {2}", appPath, inputMediaFile, outputMediaFile);
+
+                //    // Create a cloud task (with the task ID and command line)
+                //    CloudTask task = new CloudTask(taskId, taskCommandLine);
+                //    task.ResourceFiles = new List<ResourceFile> { inputFiles[i] };
+
+                //    // Task output file
+                //    List<OutputFile> outputFileList = new List<OutputFile>();
+                //    OutputFileBlobContainerDestination outputContainer = new OutputFileBlobContainerDestination(outputContainerSasUrl);
+                //    OutputFile outputFile = new OutputFile(outputMediaFile,
+                //       new OutputFileDestination(outputContainer),
+                //       new OutputFileUploadOptions(OutputFileUploadCondition.TaskSuccess));
+                //    outputFileList.Add(outputFile);
+                //    task.OutputFiles = outputFileList;
+                //    tasks.Add(task);
+                //}
+
+
                 TaskStateMonitor taskStateMonitor = batchClient.Utilities.CreateTaskStateMonitor();
 
                 List<CloudTask> ourTasks = await batchClient.JobOperations.ListTasks(jobId).ToListAsync();
