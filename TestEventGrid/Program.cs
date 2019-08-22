@@ -6,7 +6,8 @@ namespace TestEventGrid
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new Publisher().Run();
+            Consumer.Run().GetAwaiter().GetResult();
         }
     }
 }

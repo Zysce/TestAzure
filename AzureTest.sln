@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestWebApp", "TestWebApp\Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestVM", "TestVM\TestVM.csproj", "{DD09E307-1D1D-4103-B068-B24C618BD9B1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNotifHub", "TestNotifHub\TestNotifHub.csproj", "{D8FBA62F-81DB-4DC0-9087-4ED07A8F8306}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFunc", "TestFunc\TestFunc.csproj", "{38596417-E06D-4B51-AED0-A349E07DDF97}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestStorageAcc", "TestSotrageAcc\TestStorageAcc.csproj", "{C210D36D-30BC-4911-A126-9E7C994169E4}"
@@ -22,8 +20,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDb", "TestDb\TestDb.csproj", "{8BBBBD60-1338-435C-8FD7-2BEB857151A0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBlob", "TestBlob\TestBlob.csproj", "{AE5C2EF6-5E7E-436C-B10C-562F4CF87E4E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAD", "TestAD\TestAD.csproj", "{98705D81-E839-4752-81D0-757777EDD18C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSas", "TestSas\TestSas.csproj", "{A6E1EC19-6439-4DE7-AF08-22988958AFEE}"
 EndProject
@@ -52,9 +48,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBot", "TestBot\TestBot.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTimeSeriesInsights", "TestTimeSeriesInsights\TestTimeSeriesInsights.csproj", "{135C0D48-363D-4895-BC78-199E7147C65E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestServiceBus", "TestServiceBus\TestServiceBus.csproj", "{7914DD7E-6ACC-47B3-966E-81F17ED73740}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestServiceBus", "TestServiceBus\TestServiceBus.csproj", "{7914DD7E-6ACC-47B3-966E-81F17ED73740}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestQueue", "TestQueue\TestQueue.csproj", "{0BF955BC-FFD9-44EB-AB86-86C65C6CA229}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestQueue", "TestQueue\TestQueue.csproj", "{0BF955BC-FFD9-44EB-AB86-86C65C6CA229}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,10 +74,6 @@ Global
 		{DD09E307-1D1D-4103-B068-B24C618BD9B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD09E307-1D1D-4103-B068-B24C618BD9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD09E307-1D1D-4103-B068-B24C618BD9B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D8FBA62F-81DB-4DC0-9087-4ED07A8F8306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8FBA62F-81DB-4DC0-9087-4ED07A8F8306}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8FBA62F-81DB-4DC0-9087-4ED07A8F8306}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8FBA62F-81DB-4DC0-9087-4ED07A8F8306}.Release|Any CPU.Build.0 = Release|Any CPU
 		{38596417-E06D-4B51-AED0-A349E07DDF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{38596417-E06D-4B51-AED0-A349E07DDF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38596417-E06D-4B51-AED0-A349E07DDF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -102,10 +94,6 @@ Global
 		{AE5C2EF6-5E7E-436C-B10C-562F4CF87E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE5C2EF6-5E7E-436C-B10C-562F4CF87E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE5C2EF6-5E7E-436C-B10C-562F4CF87E4E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98705D81-E839-4752-81D0-757777EDD18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98705D81-E839-4752-81D0-757777EDD18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98705D81-E839-4752-81D0-757777EDD18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98705D81-E839-4752-81D0-757777EDD18C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6E1EC19-6439-4DE7-AF08-22988958AFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6E1EC19-6439-4DE7-AF08-22988958AFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6E1EC19-6439-4DE7-AF08-22988958AFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
